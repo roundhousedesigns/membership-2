@@ -976,14 +976,14 @@ class MS_Controller_Plugin extends MS_Controller {
 			if ( $membership_id ) {
 				$template = get_query_template(
 					'm2',
-					'm2-' . $type . '-' . $membership_id . '.php'
+					['m2-' . $type . '-' . $membership_id . '.php']
 				);
 			}
 
 			if ( ! $template ) {
 				$template = get_query_template(
 					'm2',
-					'm2-' . $type . '.php'
+					['m2-' . $type . '.php']
 				);
 			}
 		}
